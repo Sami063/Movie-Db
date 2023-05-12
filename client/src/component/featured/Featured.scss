@@ -1,0 +1,65 @@
+.featured {
+    height: 90vh;
+    position: relative;
+    img {
+        width: 100%;
+        height: 100%;
+        // position: absolute;
+    }
+    .info {
+        color: white;
+        width: 35%;
+        left: 60px;
+        position: absolute; // beværelse
+        bottom: 100px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .featured {
+        top: 70px;
+        height: 350px;
+        position: relative;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+        .info {
+            color: white;
+            width: 45%;
+            height: 150px;
+            overflow: hidden;
+            left: 60px;
+            position: absolute;
+            bottom: 100px;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+@media screen and (max-width: 768px)  {
+    .featured {
+        top: 70px;
+        height: 370px;
+        position: relative;
+        margin-bottom: 80px;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+        .info {
+            color: white;
+            width: 45%;
+            height: 150px;
+            overflow: hidden;
+            left: 60px;
+            position: absolute;
+            bottom: 100px;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}

@@ -1,0 +1,72 @@
+.list {
+    width: 100%;
+    margin-top: 10px;
+    
+    .wrapper {
+        position: relative;
+        margin-top: 25px;
+        .container {
+            display: flex;
+            width: max-content;
+            margin-left: 50px;
+            transition: all 1s;
+        }
+        .slideArrow {
+            position: absolute;
+            width: 50px;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+
+            height: 225px;
+            color: white;
+            cursor: pointer;
+            z-index: 99;
+        }
+
+        .left {
+            left: 0;
+            margin-right: 5px;
+        }
+        .right {
+            right: 0;
+        }
+    }
+}
+
+// iphone XR
+@media screen and (max-width: 414px) {
+    .list {
+        .wrapper {
+            position: relative;
+            margin-top: 25px;
+            .container {
+                display: flex;
+                width: max-content;
+                margin-left: 0px;
+                transition: all 1s;
+            }
+            .slideArrow {
+                position: absolute;
+                width: 25px;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+    
+                height: 170px;
+                color: white;
+                font-weight: bold;
+                cursor: pointer;
+                z-index: 99;
+            }
+    
+            .left {
+                left: 0;
+                margin-right: 5px;
+            }
+            .right {
+                right: 0;
+            }
+        }
+    }
+}
